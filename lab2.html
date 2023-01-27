@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Box</title>
+    <link rel="stylesheet" type="text/css" href="lab2.css">
+    <script src="lab2.js"></script>
+</head>
+<body>
+    <h1 >Login Page</h1>
+    <section class="login" >
+        <form name="login_information" action="#" method="POST">
+            <fieldset class="login__fieldset">
+                <legend>User Authentication</legend>
+                <!--USER NAME -->
+                <div>
+                    <label for="UserName" class="login__label">Username:</label>
+				    <input type="text" name="UserName" class="login__txt" id="login__userName"/>
+                </div>
+                <!--PASSWORD -->
+                <div>
+                    <label for="Login" class="login__label">Password:</label>
+                    <input type="password" name="Password" class="login__txt" id="login__password"/> 
+                </div>
+                <br>
+                <div id="btn-site-info" >
+                    <button class="login__button"  type="submit" >Log in</button>
+                </div>
+            </fieldset>
+    </form>
+</section>
+    <section class="output" id="output">
+        <div >Username:<span id="output__username" class="output__text"></span></div>
+        <br>
+        <div >Password:<span id="output__password" class="output__text"></span></div>
+    </section>
+</body>
+</html>
